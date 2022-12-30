@@ -4,6 +4,9 @@ variable "region" {
   default     = "us-east-1"
 }
 
+################################################################################
+# Requester variables
+################################################################################
 variable "requester_aws_assume_role_arn" {
   type        = string
   description = "Requester AWS Assume Role ARN"
@@ -12,7 +15,7 @@ variable "requester_aws_assume_role_arn" {
 variable "requester_region" {
   type        = string
   description = "Requester AWS region"
-  default     = "us-west-2"
+  default     = "us-east-1"
 }
 
 variable "requester_vpc_id" {
@@ -26,6 +29,9 @@ variable "requester_allow_remote_vpc_dns_resolution" {
   default     = true
 }
 
+################################################################################
+# accepter variables
+################################################################################
 variable "accepter_enabled" {
   description = "Flag to enable/disable the accepter side of the peering connection"
   type        = bool
@@ -55,7 +61,3 @@ variable "accepter_allow_remote_vpc_dns_resolution" {
   default     = true
 }
 
-# variable "availability_zones" {
-#   type        = list(string)
-#   description = "Availability zone IDs"
-# }
