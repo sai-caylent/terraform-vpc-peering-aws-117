@@ -6,6 +6,7 @@
    2. versions.tf
    3. variables.tf
    4. outputs.tf
+   5. .tfvars
 
 3. Modify variables in tfvars as you requres.
 
@@ -23,8 +24,9 @@ accepter_aws_assume_role_arn = "arn:aws:iam::accountID:role/accepter-role-vpcb"
 accepter_region = "us-east-2"
 accepter_vpc_id = "vpc-0110******"
 
+4. run terraform init to download the modules
 
-4. run with terraform plan to view resources
+5. run with terraform plan to view resources
 
-5. run terraform apply to apply resources.
+6. run terraform apply to apply resources.
 
