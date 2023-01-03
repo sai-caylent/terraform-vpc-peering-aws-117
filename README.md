@@ -15,12 +15,12 @@
 
 name = "cross_account-vpc_peering"
 
-requester_aws_assume_role_arn = "arn:aws:iam::accountID:role/requester-role-vpca"
+requester_aws_assume_role_arn = "arn:aws:iam::XXXXXXXX:role/cross-account-vpc-peering-test"
 requester_region = "us-east-2"
 requester_vpc_id ="vpc-0ada0f29********"
 
 
-accepter_aws_assume_role_arn = "arn:aws:iam::accountID:role/accepter-role-vpcb"
+accepter_aws_assume_role_arn = "arn:aws:iam::YYYYYYYY:role/cross-account-vpc-peering-test"
 accepter_region = "us-east-2"
 accepter_vpc_id = "vpc-0110******"
 
@@ -30,7 +30,8 @@ accepter_vpc_id = "vpc-0110******"
 
 6. run terraform apply to apply resources.
 
-## the following roles with access policy are required for this template
+## The following roles with access policy are required for this template
+
 The `arn:aws:iam::XXXXXXXX:role/cross-account-vpc-peering-test` requester IAM Role should have the following Trust Policy:
 
 <details><summary>Show Trust Policy</summary>
