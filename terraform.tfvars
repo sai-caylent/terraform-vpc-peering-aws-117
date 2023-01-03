@@ -3,7 +3,7 @@ namespace = "F45"
 
 stage = "Production"
 
-name = "cross_account-vpc_peering_"
+name = "cross_account-vpc_peering"
 
 requester_aws_assume_role_arn = "arn:aws:iam::131578276461:role/requester-role-vpca"
 requester_region = "us-east-2"
@@ -16,5 +16,6 @@ accepter_vpc_id = "vpc-011078d05f2a9cf44"
 
 
 tags = {
-  "owner" = "f45"
+  "owner" = "F45"
+  "project" = "F45"
 }
