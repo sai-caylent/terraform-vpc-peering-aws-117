@@ -30,7 +30,7 @@ accepter_vpc_id = "vpc-0110******"
 
 6. run terraform apply to apply resources.
 
-#Prerequisites
+## the following roles with access policy are required for this template
 The `arn:aws:iam::XXXXXXXX:role/cross-account-vpc-peering-test` requester IAM Role should have the following Trust Policy:
 
 <details><summary>Show Trust Policy</summary>
