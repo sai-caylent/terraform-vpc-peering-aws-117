@@ -1,10 +1,9 @@
-region = "us-east-2"
 
-# namespace = "eg"
+namespace = "F45"
 
-# stage = "test"
+stage = "Production"
 
-name = "vpc_peering_cross_account"
+name = "cross_account-vpc_peering_"
 
 requester_aws_assume_role_arn = "arn:aws:iam::131578276461:role/requester-role-vpca"
 requester_region = "us-east-2"
