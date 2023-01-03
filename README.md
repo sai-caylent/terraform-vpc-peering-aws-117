@@ -24,7 +24,7 @@ accepter_aws_assume_role_arn = "arn:aws:iam::YYYYYYYY:role/cross-account-vpc-pee
 accepter_region = "us-east-2"
 accepter_vpc_id = "vpc-0110******"
 
-# please subsititue XXX & YYY with respective account ids.
+## please subsititue XXX & YYY with respective account ids.
 
 4. run terraform init to download the modules
 
